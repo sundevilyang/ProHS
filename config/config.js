@@ -95,13 +95,7 @@ export default {
           routes: [
             {
               path: '/',
-              redirect: '/welcome',
-            },
-            {
-              path: '/welcome',
-              name: 'welcome',
-              icon: 'smile',
-              component: './Welcome',
+              redirect: '/classroom',
             },
             {
               path: '/admin',
@@ -109,6 +103,12 @@ export default {
               icon: 'crown',
               component: './Admin',
               authority: ['admin'],
+            },
+            {
+              name: '我的教室',
+              icon: 'smile',
+              path: '/classroom',
+              component: './classroom',
             },
             {
               component: './404',
